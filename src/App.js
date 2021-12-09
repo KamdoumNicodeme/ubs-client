@@ -4,6 +4,7 @@ import Announcement from "./components/announcement";
 import Slider from "./components/Slider";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
+import NewLetters from "./components/NewLetters";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Slider/>
             <Categories/>
             <Products/>
+            <NewLetters/>
         </div>
     );
 }
