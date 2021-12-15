@@ -1,21 +1,14 @@
 import './App.css';
-import Navbar from "./components/Navbar";
-import Announcement from "./components/announcement";
-import Slider from "./components/Slider";
-import Categories from "./components/Categories";
-import Products from "./components/Products";
-import NewLetters from "./components/NewLetters";
+
+import Home from "./pages/Home";
+import ProductList from "./pages/ProductList";
 
 function App() {
     return (
 
         <div>
-            <Announcement/>
-            <Navbar/>
-            <Slider/>
-            <Categories/>
-            <Products/>
-            <NewLetters/>
+           <Home/>
+            {/*<ProductList/>*/}
         </div>
     );
 }
