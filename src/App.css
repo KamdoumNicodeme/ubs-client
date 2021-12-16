@@ -46,3 +46,7 @@
   background-color: rgba(0,0,0,0.2);
 }
 
+.grad{
+  background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
+}
+

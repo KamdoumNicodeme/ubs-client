@@ -80,7 +80,7 @@ function Footer() {
                     <FaEnvelope className="mr-2"/> contactubs@gmail.com
                 </div>
                 <div className="w-1/2">
-                    paiement
+                    <img src="https://i.ibb.co/bgtZ6Qv/logo-cb.jpg" alt=""/>
                 </div>
 
             </div>

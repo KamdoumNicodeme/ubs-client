@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 function Navbar() {
 
     const handleClick = () => {
@@ -35,10 +37,10 @@ function Navbar() {
                         </div>
 
                         <div className="hidden md:flex items-center py-auto space-x-1 px-10 ">
-                            <a href="/login" className="py-5 px-3 text-xs">REGISTER</a>
-                            <a href="/register"
+                            <Link to="/register" className="py-5 px-3 text-xs">REGISTER</Link>
+                            <Link to ="/login"
                                className="py-2 px-3  bg-purple-600 text-white rounded hover:bg-purple-400 transition duration-300 text-xs">SIGN
-                                IN</a>
+                                IN</Link>
 
                             <span className="relative inline-block">
  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -8,14 +8,14 @@ function NewLetters() {
         <div style={{height:`${60}vh`}} className="bg-gray-50 flex items-center justify-center flex-col mb-5">
 
             {/*ttile*/}
-            <h1 className="text-4xl">
+            <h1 className="text-8xl">
 
                 Newletter
             </h1>
 
             {/*    description*/}
 
-            <p className="m-10 mx-auto text-xl font-medium tracking-wider font-light mb-5 ">
+            <p className="m-10 mx-auto text-2xl font-medium tracking-wider font-light mb-5 ">
                 get timely updates from your favorite products.
             </p>
             {/*input container*/}
