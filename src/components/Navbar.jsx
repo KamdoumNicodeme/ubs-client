@@ -20,9 +20,9 @@ function Navbar() {
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mr-2 text-blue-400"
                                          fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                               d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
                                     </svg>
                                     <span className="font-bold"> <h1 className="text-2xl">Ubs Shop</h1></span>
@@ -30,9 +30,9 @@ function Navbar() {
                             </div>
 
                             <div className="hidden md:flex items-center py-auto space-x-1">
-                                <a href="#" href="#"
-                                   className="py-5 px-2 text-gray-700  hover:text-gray-900">Features</a>
-                                <a href to="#" className="py-5 px-2 text-gray-700  hover:text-gray-900">Pricing</a>
+                                <Link to="#"
+                                   className="py-5 px-2 text-gray-700  hover:text-gray-900">Features</Link>
+                                <Link  to="#" className="py-5 px-2 text-gray-700  hover:text-gray-900">Pricing</Link>
                             </div>
                         </div>
 
@@ -57,9 +57,9 @@ function Navbar() {
                             <button className="menu-mobile-button" onClick={handleClick}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20"
                                      fill="currentColor">
-                                    <path fill-rule="evenodd"
+                                    <path fillRule="evenodd"
                                           d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                          clip-rule="evenodd"/>
+                                          clipRule="evenodd"/>
                                 </svg>
                             </button>
 
@@ -70,8 +70,8 @@ function Navbar() {
                 </div>
 
                 <div className="mobile-menu hidden md:hidden">
-                    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">Features</a>
-                    <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a>
+                    <Link to="#" className="block py-2 px-4 text-sm hover:bg-gray-200">Features</Link>
+                    <Link to="#" className="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</Link>
                 </div>
 
 

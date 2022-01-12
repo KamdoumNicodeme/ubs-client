@@ -31,6 +31,7 @@ function Slider (props)  {
             {/*ArrowLeft*/}
             <div
                 className="flex items-center absolute top-0 bottom-0 justify-items-center	 cursor-pointer opacity-50 m-auto"
+                /* eslint-disable-next-line no-sequences */
                 direction="left" style={{left: `${props => props.direction === "left", "10px"}`, zIndex: `${2}`}}
                 onClick={()=>handleClick("left")}>
                 <AiOutlineLeft className="bg-red-100 rounded-full text-3xl inset-y-1/2  cursor-pointer"/>
@@ -38,7 +39,7 @@ function Slider (props)  {
             {/*end ArrowLeft*/}
 
             {/*wrapper*/}
-            <div className="h-full flex duration-1000 ease-in-out" style={{transform: `translateX(${-(slideIndex * 100)}vw)`}}  slideIndex={slideIndex}>
+            <div className="h-full flex duration-1000 ease-in-out" style={{transform: `translateX(${-(slideIndex * 100)}vw)`}}  >
                 {sliderItems.map((item) =>(
 
                     <div className="flex items-center w-screen h-screen" style={{backgroundColor:`#${item.bg}`}} key={item.id} >
@@ -82,7 +83,8 @@ function Slider (props)  {
             <div
                 className="flex items-center absolute top-0 bottom-0 justify-items-center cursor-pointer opacity-50 m-auto"
 
-                direction="right" style={{right: `${props => props.direction === "right", "10px"}`}}
+                /* eslint-disable-next-line no-sequences */
+                direction="right" style={{right: `${props => props.direction === "right" , "10px"}`}}
                 onClick={()=>handleClick("right")}>
                 <AiOutlineRight className="bg-red-100 rounded-full text-3xl inset-y-1/2  cursor-pointer"
                                 direction="right"/>

@@ -18,7 +18,7 @@ function Login()  {
         await fetch("http://localhost:5000/api/auth/login", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
-
+            credentials: "include",
             body: JSON.stringify({
                 username,
                 password
@@ -40,7 +40,7 @@ function Login()  {
                 height: `${100}vh`,
                 background: `linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) ,url(${"https://i.ibb.co/hB9QyFR/wallpapersden-com-lily-collins-stunning-cover-for-shape-magazine-2560x1440.jpg"})`,
 
-            }} className="flex items-center justify-center bg-cover">
+            }} className="flex items-center justify-center bg-cover md:flex">
                 {/*    Wrapper*/}
                 <div className="p-20px w-3/12 bg-gray-100">
                     <h1 className="text-3xl font-sans mx-4 ">SIGN IN </h1>

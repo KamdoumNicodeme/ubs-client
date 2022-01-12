@@ -10,7 +10,7 @@ function NewLetters() {
             {/*ttile*/}
             <h1 className="text-8xl">
 
-                Newletter
+                Newsletter
             </h1>
 
             {/*    description*/}
@@ -19,13 +19,13 @@ function NewLetters() {
                 get timely updates from your favorite products.
             </p>
             {/*input container*/}
-            <di  className="h-10 w-3/6 bg-white flex justify-between " >
+            <div  className="h-10 w-3/6 bg-white flex justify-between " >
                 <input type="email" placeholder="Enter your email address" className="border-none px-9" style={{flex:`${8}`}}/>
                 <button className="bg-blue-500 flex-1 border-none text-white" >
                     <AiOutlineSend className="h-10 w-10 ml-10"/>
                 </button>
 
-            </di>
+            </div>
 
         </div>
     );

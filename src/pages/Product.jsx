@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Announcement from "../components/announcement";
 import NewLetters from "../components/NewLetters";
 import Footer from "../components/Footer";
-import {AiOutlineAppstoreAdd, FaAd, FaMinus, FaPlus, FaRemoveFormat} from "react-icons/all";
+import { FaMinus, FaPlus} from "react-icons/all";
 
 function Product() {
 
@@ -64,7 +64,7 @@ function Product() {
                                 <FaPlus/>
                             </div>
 
-                            <button className="p-3 cursor-pointer bg-white font-medium hover:bg-purple-200 hover:text-black text-white" style={{ border:`${2}px solid blue`,color:`${'red'}`}}>ADD TO CART</button>
+                            <button className="p-3 cursor-pointer bg-white font-medium hover:bg-purple-200" style={{ border:`${2}px solid blue`}}>ADD TO CART</button>
                         </div>
 
                     </div>

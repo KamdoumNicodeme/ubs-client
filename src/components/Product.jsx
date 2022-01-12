@@ -10,7 +10,7 @@ function Product({item}){
                 <div className="w-48 h-48 rounded-full bg-white absolute">
 
                 </div>
-                <img src={item.img} alt="" className="h-3/4" style={{zIndex:`${2}`}}/>
+                <img src={item.image} alt="" className="h-3/4" style={{zIndex:`${2}`}}/>
                 {/*info*/}
                 <div className="absolute top-0 left-0 bg-gray-500 flex items-center justify-center yo opacity-0 hover:opacity-100 transition duration-1000 ease-in-out cursor-pointer" style={{zIndex:`${3}`, height:`${100}%`,width:`${100}%`}}>
                     {/*icon*/}
