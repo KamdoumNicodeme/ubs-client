@@ -3,8 +3,36 @@ import Announcement from "../components/announcement";
 import NewLetters from "../components/NewLetters";
 import Footer from "../components/Footer";
 import { FaMinus, FaPlus} from "react-icons/all";
+import {useLocation} from "react-router-dom";
+import {useEffect, useState} from "react";
+import {publicRequest} from "../requestMethod";
+
 
 function Product() {
+
+    const location = useLocation();
+
+    const id = location.pathname.split("/")[2];
+
+    const [product, setProduct] = useState({});
+
+    useEffect(()=>{
+
+        const getProduct = async ()=>{
+            try{
+
+                const res = await publicRequest.get("/products/find/"+id);
+
+                setProduct(res.data);
+
+            } catch (err){
+
+                console.log(err)
+            }
+        };
+        getProduct().then();
+
+    },[id]);
 
     return (
         <div>
@@ -16,7 +44,7 @@ function Product() {
                 <div className="p-8 flex" >
                     {/*    image container*/}
                     <div className="flex-1 w-full object-cover" style={{height: `${90}vh`}}>
-                        <img src="https://i.ibb.co/9Yz0HR7/da4eb4bc92a3733a8e27f83b1acabba1.jpg" alt=""/>
+                        <img src={product.image} alt=""/>
                     </div>
                     {/*    info container*/}
                     <div className=" p-5 flex-1" style={{padding:`${0}px ${50}px`}}>

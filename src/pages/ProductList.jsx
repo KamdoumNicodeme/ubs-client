@@ -30,7 +30,7 @@ function ProductList() {
         <div>
             <Navbar/>
             <Announcement/>
-            <h1 className="font-bold text-3xl m-6"> Dresses</h1>
+            <h1 className="font-bold text-3xl m-6">{cat}</h1>
             {/*    filterContainer*/}
             <div className="flex justify-between">
                 {/*    filter*/}

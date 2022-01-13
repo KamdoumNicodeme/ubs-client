@@ -35,12 +35,31 @@ function Products({cat, filters, sort}) {
 
     }, [product, cat, filters]);
 
+    useEffect( ()=>{
+        if (sort ==="newest"){
+            setFilterProduct((prev)=>
+            [...prev].sort((a,b)=>a.createdAt -b.createdAt));
+        }else if (sort ==="asc"){
+            setFilterProduct((prev)=>
+                [...prev].sort((a,b)=>a.price -b.price));
+        }
+        else{
+            setFilterProduct((prev)=>
+                [...prev].sort((a,b)=>b.price -a.price));
+        }
+
+    },[sort]);
+
 
     return (
         //container
         <div className="p-5 flex flex-wrap justify-between">
 
-            {filterProduct.map((item) => (
+            { cat ? filterProduct.map((item) => (
+
+                <Product item={item} key={item._id}/>
+            )): product.slice(0,8)
+                .map((item) => (
 
                 <Product item={item} key={item._id}/>
             ))}
