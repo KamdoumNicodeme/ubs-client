@@ -10,26 +10,26 @@ import {Navigate, Route, Routes} from "react-router-dom";
 
 function App() {
 
-    const user = true;
-    return (
+  const user = true;
+  return (
 
-        <div>
-           {/* <Register/>*/}
-           {/* <Cart/>*/}
+      <div>
+        {/* <Register/>*/}
+        {/* <Cart/>*/}
 
-           <Routes>
-               <Route path="/" exact element ={<Home/>}/>
-               <Route path="/login" element={user ? <Navigate to="/" /> : <Login/>}/>
+        <Routes>
+          <Route path="/" exact element ={<Home/>}/>
+          <Route path="/login" element={user ? <Navigate to="/" /> : <Login/>}/>
 
 
-               <Route path="/cart"  element ={<Cart/>}/>
-               <Route path="/product"  element ={<Product/>}/>
-               <Route path="/products/:category"  element ={<ProductList/>}/>
-               <Route path="/product/:id"  element ={<Product/>}/>
-               <Route path="/register"  element ={user ? <Navigate to="/" /> : <Register/>}/>
-           </Routes>
-        </div>
-    );
+          <Route path="/cart"  element ={<Cart/>}/>
+          <Route path="/product"  element ={<Product/>}/>
+          <Route path="/products/:category"  element ={<ProductList/>}/>
+          <Route path="/product/:id"  element ={<Product/>}/>
+          <Route path="/register"  element ={user ? <Navigate to="/" /> : <Register/>}/>
+        </Routes>
+      </div>
+  );
 }
 
 export default App;

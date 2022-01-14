@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
 
 function Navbar() {
 
@@ -6,7 +7,11 @@ function Navbar() {
         menu().classList.toggle("hidden");
     };
 
-    const menu = () => document.querySelector('.mobile-menu')
+    const menu = () => document.querySelector('.mobile-menu');
+
+    const cart = useSelector(state => state.cart);
+
+    console.log(cart);
 
 
     return (

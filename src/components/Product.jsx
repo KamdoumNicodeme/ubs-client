@@ -1,4 +1,4 @@
-import {AiOutlineHeart, AiOutlineSearch, AiOutlineShoppingCart} from "react-icons/all";
+import { FaHeart, FaSearch, FaShoppingCart} from "react-icons/fa";
 import {Link} from "react-router-dom";
 
 function Product({item}){
@@ -17,18 +17,18 @@ function Product({item}){
                     {/*icon*/}
                     <div  className="rounded-full bg-white flex items-center justify-center w-10 h-10 m-2.5 hover:bg-gray-100 hover:scale-110 transform transition-all transform transition duration-500" >
 
-                        <AiOutlineShoppingCart/>
+                        <FaShoppingCart/>
 
                     </div>
                     <div  className="rounded-full bg-white flex items-center justify-center w-10 h-10 m-2.5 hover:bg-gray-100 hover:scale-110 transform transition-all transform transition duration-500" >
 
                         <Link to={`/product/${item._id}`}>
-                            <AiOutlineSearch/>
+                            <FaSearch/>
                         </Link>
 
                     </div>
                     <div  className="rounded-full bg-white flex items-center justify-center w-10 h-10 m-2.5 hover:bg-gray-100 hover:scale-110 transform transition-all transform transition duration-500" >
-                        <AiOutlineHeart/>
+                        <FaHeart/>
 
                     </div>
 
